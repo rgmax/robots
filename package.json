@@ -10,12 +10,16 @@
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "husky": "^2.4.1",
+    "mocha": "^6.1.4",
     "standard-version": "^6.0.1"
   },
   "scripts": {
     "release": "standard-version",
-    "test": "node tests"
+    "test": "mocha --timeout 20000 tests",
+    "start": "node server"
   },
   "husky": {
     "hooks": {
