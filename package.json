@@ -1,0 +1,26 @@
+{
+  "name": "robots",
+  "version": "0.0.0",
+  "description": "robots eat humans",
+  "main": "server.js",
+  "repository": "https://github.com/rgmax/robots.git",
+  "author": "Reza Gholamzadeh <reza.gholamzadeh20@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "husky": "^2.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E  HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": ["@commitlint/config-conventional"],
+    "rules": {
+      "subject-case": [2, "never", ["start-case", "pascal-case"]]
+    }
+  }
+}
