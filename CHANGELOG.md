@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.3](https://github.com/rgmax/robots/compare/v0.3.2...v0.3.3) (2019-06-16)
+
+
+### Bug Fixes
+
+* bash script ([495882b](https://github.com/rgmax/robots/commit/495882b))
+* update secrets ([01d0cf7](https://github.com/rgmax/robots/commit/01d0cf7))
+
+
+
 ### [0.3.3-2](https://github.com/rgmax/robots/compare/v0.3.2...v0.3.3-2) (2019-06-16)
 
 
