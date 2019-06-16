@@ -1,17 +1,18 @@
 language: node_js
 node_js:
-  - "8"
+- '8'
 services:
-  - docker
-
+- docker
 before_install:
-  - openssl aes-256-cbc -K $encrypted_91816b0030e0_key -iv $encrypted_91816b0030e0_iv -in scripts/github_deploy_key.enc -out github_deploy_key -d
-  - chmod 600 github_deploy_key
-  - eval $(ssh-agent -s)
-  - ssh-add github_deploy_key
-
+- openssl aes-256-cbc -K $encrypted_91816b0030e0_key -iv $encrypted_91816b0030e0_iv
+  -in scripts/tipi-staging-micro-services-91d8a0a468e1.json.enc -out tipi-staging-micro-services-91d8a0a468e1.json
+  -d
+- openssl aes-256-cbc -K $encrypted_91816b0030e0_key -iv $encrypted_91816b0030e0_iv
+  -in scripts/github_deploy_key.enc -out github_deploy_key -d
+- chmod 600 github_deploy_key
+- eval $(ssh-agent -s)
+- ssh-add github_deploy_key
 before_script:
-  - yarn start &
-
+- yarn start &
 after_script:
-  - bash scripts/deploy.sh
+- bash scripts/install-kubectl.sh
