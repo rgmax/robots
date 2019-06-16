@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.5](https://github.com/rgmax/robots/compare/v0.3.4...v0.3.5) (2019-06-16)
+
+
+### Bug Fixes
+
+* production config fix ([3fa57aa](https://github.com/rgmax/robots/commit/3fa57aa))
+
+
+
 ### [0.3.4](https://github.com/rgmax/robots/compare/v0.3.3...v0.3.4) (2019-06-16)
 
 
