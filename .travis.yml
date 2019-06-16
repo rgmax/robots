@@ -3,6 +3,12 @@ node_js:
 - '8'
 services:
 - docker
+cache:
+  directories:
+  - $HOME/google-cloud-sdk
+env:
+  global:
+  - CLOUDSDK_CORE_DISABLE_PROMPTS=1
 before_install:
 - openssl aes-256-cbc -K $encrypted_d719442f9bd4_key -iv $encrypted_d719442f9bd4_iv
   -in scripts/secrets.tar.enc -out secrets.tar -d
