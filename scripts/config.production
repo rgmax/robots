@@ -1,6 +1,6 @@
 STANDARD_VERSION_ARGS=
 GIT_PUSH_ARGS=--follow-tags
-CLOUD_SERVICE_ACCOUNT_EMAIL=travis@spartan-grail-186911.iam.gserviceaccount.com
+CLOUD_SERVICE_ACCOUNT_EMAIL=travis-343@spartan-grail-186911.iam.gserviceaccount.com
 CLOUD_SERVICE_ACCOUNT_KEY_FILE=spartan-grail-186911-2565d27563c8.json
 CLOUD_CLUSTER_NAME=cluster-sydney
 CLOUD_CLUSTER_ZONE=australia-southeast1-a
