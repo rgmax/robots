@@ -5,7 +5,7 @@ services:
 - docker
 cache:
   directories:
-  - $HOME/google-cloud-sdk
+  - "$HOME/google-cloud-sdk"
 env:
   global:
   - CLOUDSDK_CORE_DISABLE_PROMPTS=1
