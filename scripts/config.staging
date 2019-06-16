@@ -1,0 +1,7 @@
+STANDARD_VERSION_ARGS=--prerelease
+GIT_PUSH_ARGS=
+CLOUD_SERVICE_ACCOUNT_EMAIL=travis@tipi-staging-micro-services.iam.gserviceaccount.com
+CLOUD_SERVICE_ACCOUNT_KEY_FILE=tipi-staging-micro-services-91d8a0a468e1.json
+CLOUD_CLUSTER_NAME=cluster-stg-sydney
+CLOUD_CLUSTER_ZONE=australia-southeast1-a
+CLOUD_CLUSTER_PROJECT=tipi-staging-micro-services
