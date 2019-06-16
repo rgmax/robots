@@ -2,6 +2,7 @@
 set -ev
 
 yarn release
+git log --oneline
 git remote set-url origin git@github.com:${TRAVIS_REPO_SLUG}.git
 git push --follow-tags origin ${TRAVIS_BRANCH}
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
