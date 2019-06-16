@@ -8,4 +8,5 @@ gcloud version
 
 gcloud config set account travis@tipi-staging-micro-services.iam.gserviceaccount.com
 gcloud auth activate-service-account --key-file=tipi-staging-micro-services-91d8a0a468e1.json
+gcloud container clusters get-credentials cluster-stg-sydney --zone australia-southeast1-a --project tipi-staging-micro-services
 kubectl config get-contexts
