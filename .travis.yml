@@ -14,7 +14,4 @@ before_script:
   - yarn start &
 
 after_script:
-  provider: script
-  script: bash scripts/deploy.sh
-  on:
-    branch: develop
+  - bash scripts/deploy.sh
