@@ -1,11 +1,11 @@
 #!/bin/bash
 set -ev
 
-if [[ ${TEST_BRANCH_NAME} =~ ^release.*$ || ${TEST_BRANCH_NAME} == master ]]
+if [[ ${TRAVIS_BRANCH} =~ ^release.*$ || ${TRAVIS_BRANCH} == master ]]
 then
     # Load configuration
     . scripts/config.common
-    if [[ ${TEST_BRANCH_NAME} == master ]]
+    if [[ ${TRAVIS_BRANCH} == master ]]
         then
             . scripts/config.production
         else
