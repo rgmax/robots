@@ -42,7 +42,7 @@
     }
   },
   "standard-version": {
-    "releaseCommitMessageFormat": "chore(release): {{currentTag}} [ci skip]"
+    "message": "chore(release): %s [ci skip]"
   },
   "dependencies": {
     "koa": "^2.7.0",
