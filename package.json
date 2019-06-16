@@ -41,6 +41,9 @@
       ]
     }
   },
+  "standard-version": {
+    "releaseCommitMessageFormat": "chore(release): {{currentTag}} [ci skip]"
+  },
   "dependencies": {
     "koa": "^2.7.0",
     "koa-router": "^7.4.0"

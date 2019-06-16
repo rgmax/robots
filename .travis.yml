@@ -11,9 +11,9 @@ before_install:
   - ssh-add github_deploy_key
 
 before_script:
-  - npm start &
+  - yarn start &
 
-deploy:
+after_script:
   provider: script
   script: bash scripts/deploy.sh
   on:
