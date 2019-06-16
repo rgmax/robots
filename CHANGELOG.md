@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.2](https://github.com/rgmax/robots/compare/v0.3.1...v0.3.2) (2019-06-16)
+
+
+### Bug Fixes
+
+* change secrets encryption ([74b073f](https://github.com/rgmax/robots/commit/74b073f))
+* disable prompt ([8703f10](https://github.com/rgmax/robots/commit/8703f10))
+
+
+
 ### [0.3.1](https://github.com/rgmax/robots/compare/v0.3.0...v0.3.1) (2019-06-16)
 
 
