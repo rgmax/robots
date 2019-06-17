@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/rgmax/robots/compare/v0.3.5...v0.4.0) (2019-06-17)
+
+
+### Bug Fixes
+
+* [RB-26] #comment fix typo ([508653d](https://github.com/rgmax/robots/commit/508653d))
+* missed semi-colon ([7d84e78](https://github.com/rgmax/robots/commit/7d84e78))
+
+
+### Features
+
+* [RB-23] #uat #comment blob blob! ([7bd2575](https://github.com/rgmax/robots/commit/7bd2575))
+
+
 
 ## [0.4.0-1](https://github.com/rgmax/robots/compare/v0.3.4...v0.4.0-1) (2019-06-17)
 
