@@ -16,7 +16,9 @@ before_install:
 - chmod 600 github_deploy_key
 - eval $(ssh-agent -s)
 - ssh-add github_deploy_key
+- bash scripts/setup-github.sh
 before_script:
+- bash scripts/build-js.sh
 - yarn start &
 after_script:
 - bash scripts/build.sh

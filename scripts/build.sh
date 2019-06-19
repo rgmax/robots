@@ -16,9 +16,7 @@ then
     if [[ ${BUILD_ENABLED} == true ]]
         then
             # Update version and push to branch
-            git checkout ${TRAVIS_BRANCH}
             yarn release ${STANDARD_VERSION_ARGS}
-            git remote set-url origin git@github.com:${TRAVIS_REPO_SLUG}.git
             git push ${GIT_PUSH_ARGS} origin ${TRAVIS_BRANCH}
 
             # Log into docker account
