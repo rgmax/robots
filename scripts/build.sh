@@ -12,17 +12,21 @@ then
             . scripts/config.staging
     fi
 
-    # Update version and push to branch
-    git checkout ${TRAVIS_BRANCH}
-    yarn release ${STANDARD_VERSION_ARGS}
-    git remote set-url origin git@github.com:${TRAVIS_REPO_SLUG}.git
-    git push ${GIT_PUSH_ARGS} origin ${TRAVIS_BRANCH}
+    # Check if build is enabled
+    if [[ ${BUILD_ENABLED} == true ]]
+        then
+            # Update version and push to branch
+            git checkout ${TRAVIS_BRANCH}
+            yarn release ${STANDARD_VERSION_ARGS}
+            git remote set-url origin git@github.com:${TRAVIS_REPO_SLUG}.git
+            git push ${GIT_PUSH_ARGS} origin ${TRAVIS_BRANCH}
 
-    # Log into docker account
-    echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+            # Log into docker account
+            echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
-    # Build & push docker image
-    SERVICE_VERSION=$(node -p "require('./package.json').version")
-    docker build -t ${APP_DOCKER_IMAGE_NAME}:${SERVICE_VERSION} .
-    docker push ${APP_DOCKER_IMAGE_NAME}:${SERVICE_VERSION}
+            # Build & push docker image
+            SERVICE_VERSION=$(node -p "require('./package.json').version")
+            docker build -t ${APP_DOCKER_IMAGE_NAME}:${SERVICE_VERSION} .
+            docker push ${APP_DOCKER_IMAGE_NAME}:${SERVICE_VERSION}
+    fi
 fi

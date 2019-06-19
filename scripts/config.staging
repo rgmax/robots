@@ -1,3 +1,5 @@
+BUILD_ENABLED=false
+DEPLOY_ENABLED=true
 STANDARD_VERSION_ARGS=--prerelease
 GIT_PUSH_ARGS=
 CLOUD_SERVICE_ACCOUNT_EMAIL=travis@tipi-staging-micro-services.iam.gserviceaccount.com
