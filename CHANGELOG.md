@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.2](https://github.com/rgmax/robots/compare/v0.6.1...v0.6.2) (2019-06-19)
+
+
+### Bug Fixes
+
+* change robot greeting ([7bf6323](https://github.com/rgmax/robots/commit/7bf6323))
+
+
+
 ### [0.6.1](https://github.com/rgmax/robots/compare/v0.6.0...v0.6.1) (2019-06-19)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "robots",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "robots eat humans",
   "main": "server.js",
   "repository": "https://github.com/rgmax/robots.git",
