@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.1](https://github.com/rgmax/robots/compare/v0.5.0...v0.5.1) (2019-06-19)
+
+
+### Bug Fixes
+
+* update deploy script ([d168aea](https://github.com/rgmax/robots/commit/d168aea))
+
+
+
 ## [0.5.0](https://github.com/rgmax/robots/compare/v0.4.0...v0.5.0) (2019-06-19)
 
 
