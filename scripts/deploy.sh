@@ -13,7 +13,7 @@ then
     fi
 
     # Check if deploy is enabled
-    if [[ ${DEPLOY_ENABLED} == true ]]
+    if [[ ${BUILD_ENABLED} == true && ${DEPLOY_ENABLED} == true ]]
         then
             # Install google cloud SDK and kubectl
             if [[ ! -d "$HOME/google-cloud-sdk/bin" ]]; then rm -rf "$HOME/google-cloud-sdk"; curl https://sdk.cloud.google.com | bash > /dev/null; fi
